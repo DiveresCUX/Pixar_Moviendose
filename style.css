@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.animation{
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: aqua;
+}
+
+.pixart{
+    height: 100px;
+    width: 100px;
+    background-image: url("img/walk4.gif");
+    background-position: 0 0;
+    animation: walk 0.5s steps(4) infinite;
+}
+
+.fondo{
+    height: 300px;
+    background-color: green;
+    background-position: 0 0;
+    animation: suelo 0.5 steps(4) infinite;
+
+}
+
+@keyframes walk{
+    from{
+        background-position: 0 0;
+    }
+
+    to{
+        background-position: -290px 0;
+    }
+
+}
+
+@keyframes suelo {
+    from{
+        background-position: 0 0;
+    }
+
+    to{
+        background-position: -300px;
+    }
+}
+
